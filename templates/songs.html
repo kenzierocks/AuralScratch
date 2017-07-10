@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+    <div id="songs" class="card">
+        <h3 class="card-header">
+            Songs
+        </h3>
+        <div class="card-block">
+            <p class="card-text">
+                Here's a list of all your songs:
+            </p>
+        </div>
+        <ul>
+            {% for item in songs %}
+                <li>Item: {{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
